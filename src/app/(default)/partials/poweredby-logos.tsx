@@ -14,8 +14,8 @@ export default function PoweredbyLogos() {
 
             {/* Item */}
             {logos.map((e: string, i: number) => (
-              <div className="w-full max-w-[145px] max-h-[70px] py-3 px-2 lg:py-2">
-                <Image src={`/images/logos/${e}`} width={300} height={300} alt="logo" objectFit="contain" priority />
+              <div key={e} className="w-full max-w-[145px] max-h-[70px] py-3 px-2 lg:py-2">
+                <Image src={`/images/logos/${e}`} width={300} height={300} alt="logo" priority />
               </div>
             ))}
 
